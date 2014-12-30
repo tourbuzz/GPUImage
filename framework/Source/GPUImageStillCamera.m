@@ -133,6 +133,10 @@ void GPUImageCreateResizedSampleBuffer(CVPixelBufferRef cameraFrame, CGSize fina
     [super removeInputsAndOutputs];
 }
 
+-(AVCaptureStillImageOutput*)getPhotoOutput{
+    return photoOutput;
+}
+
 #pragma mark -
 #pragma mark Photography controls
 
